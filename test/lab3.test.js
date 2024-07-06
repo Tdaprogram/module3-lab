@@ -12,7 +12,7 @@ describe('Fun and Interesting Unit Tests', function () {
         expect(sum(-1, 1)).to.equal(0);
     });
 
-
+    
     // 2. Fun with Emojis
 
     // 2.1: Return an emoji for a string keyword
