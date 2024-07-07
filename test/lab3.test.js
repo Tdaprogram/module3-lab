@@ -157,7 +157,7 @@ describe("Fun and Interesting Unit Tests", function () {
       return [...new Set(arr)];
     };
     expect(removeDuplicates([1, 2, 2, 3, 3, 3])).to.deep.equal([1, 2, 3]);
-    expect(removeDuplicates(["a", "a", "b", "b", "c"])).to.deep.equal([
+    expect(removeDuplicates(["a", "a", "b", "b", "c"])).to.deep.equal([ 
       "a",
       "b",
       "c",
