@@ -157,7 +157,7 @@ describe("Fun and Interesting Unit Tests", function () {
       return [...new Set(arr)];
     };
     expect(removeDuplicates([1, 2, 2, 3, 3, 3])).to.deep.equal([1, 2, 3]);
-    expect(removeDuplicates(["a", "a", "b", "b", "c"])).to.deep.equal([ 
+    expect(removeDuplicates(["a", "a", "b", "b", "c"])).to.deep.equal([
       "a",
       "b",
       "c",
@@ -251,14 +251,14 @@ describe("Fun and Interesting Unit Tests", function () {
 
       // Get the header row and get column header/Names
       const headerRow = rows[0];
-      const columnNames = headerRow.split(',');
+      const columnNames = headerRow.split(",");
 
       // Remove the header row from the rows array
       rows.shift();
 
       // Map each row to a JSON object
       const customers = rows.map((row) => {
-        const values = row.split(',');
+        const values = row.split(",");
         const customer = {};
 
         // Assign each value to its corresponding column name
@@ -281,7 +281,7 @@ describe("Fun and Interesting Unit Tests", function () {
         phone: "555-555-5555",
       },
       {
-        id: "2",
+        id: 2,
         name: "Jane Doe",
         email: "jane@example.com",
         phone: "555-555-5556",
