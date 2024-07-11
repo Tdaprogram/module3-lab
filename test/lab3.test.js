@@ -263,19 +263,24 @@ describe("Fun and Interesting Unit Tests", function () {
 
         // Assign each value to its corresponding column name
         columnNames.forEach((columnName, index) => {
-          customer[columnName] = values[index];
+          if (index == 0) {
+            customer[columnName] = values[index];
+          } else {
+            customer[columnName] = values[index];
+          }
         });
 
         return customer;
       });
 
-      return customers;
+      return customers; // Add this line to return the customers array
     };
+
     const csv =
       "id,name,email,phone\n1,John Doe,john@example.com,555-555-5555\n2,Jane Doe,jane@example.com,555-555-5556";
     const customers = [
       {
-        id: "1",
+        id: 1,
         name: "John Doe",
         email: "john@example.com",
         phone: "555-555-5555",
