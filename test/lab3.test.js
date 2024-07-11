@@ -264,7 +264,7 @@ describe("Fun and Interesting Unit Tests", function () {
         // Assign each value to its corresponding column name
         columnNames.forEach((columnName, index) => {
           if (index == 0) {
-            customer[columnName] = Number(values[index]); //must be Number(Values[index])
+            customer[columnName] = Number(values[index]); //must be Number(Values[index]) to convert string to number.
           } else {
             customer[columnName] = values[index];
           }
